@@ -1,10 +1,13 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background-image: url('images/background.jpg'); 
+    background-size: cover;
 }
 
+/* Login Page */
 .login-container {
     width: 300px;
     margin: 100px auto;
@@ -15,21 +18,50 @@ body {
 }
 
 input, button {
-    display: block;
     width: 100%;
     margin: 10px 0;
     padding: 8px;
 }
 
-nav ul {
-    background: #333;
-    padding: 10px;
+/* Sidebar */
+.container {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
 }
 
-nav ul li a {
+.sidebar {
+    width: 250px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
     color: white;
     text-decoration: none;
+}
+
+/* Content */
+.content {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+}
+
+/* Profile Page */
+.profile-container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
 }
