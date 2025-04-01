@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlzLumaCare - Dashboard</title>
+    <title>Dashboard - AlzLumaCare</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to AlzLumaCare</h1>
-        <nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>☰</h2>
             <ul>
-                <li><a href="medicare.html">Medicare</a></li>
-                <li><a href="lifetrack.html">LifeTrack</a></li>
-                <li><a href="binsight.html">B Insight</a></li>
-                <li><a href="roommatrix.html">Room Matrix</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#">Menu ▾</a>
+                    <ul class="submenu">
+                        <li><a href="medicare.html">Medicare</a></li>
+                        <li><a href="lifetrack.html">LifeTrack</a></li>
+                        <li><a href="binsight.html">B Insight</a></li>
+                        <li><a href="roommatrix.html">Room Matrix</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Settings</a></li>
                 <li><a href="index.html">Logout</a></li>
             </ul>
-        </nav>
-    </header>
+        </aside>
+        <main class="content">
+            <h1>AlzLumaCare</h1>
+        </main>
+    </div>
 </body>
 </html>
