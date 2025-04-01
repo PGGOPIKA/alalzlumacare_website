@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlzLumaCare</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AlzLumaCare - Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>AlzLumaCare</h2>
-        <ul>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="update.html">Update Profile</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <h1>Welcome to AlzLumaCare</h1>
-        <p>Select an option from the sidebar.</p>
+    <div class="login-container">
+        <h1>AlzLumaCare</h1>
+        <form action="dashboard.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
     </div>
 </body>
 </html>
