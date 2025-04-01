@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - AlzLumaCare</title>
+    <title>AlzLumaCare - Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>☰</h2>
+    <header>
+        <h1>Welcome to AlzLumaCare</h1>
+        <nav>
             <ul>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="#">Menu ▾</a>
-                    <ul class="submenu">
-                        <li><a href="medicare.html">Medicare</a></li>
-                        <li><a href="lifetrack.html">LifeTrack</a></li>
-                        <li><a href="binsight.html">B Insight</a></li>
-                        <li><a href="roommatrix.html">Room Matrix</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="medicare.html">Medicare</a></li>
+                <li><a href="lifetrack.html">LifeTrack</a></li>
+                <li><a href="binsight.html">B Insight</a></li>
+                <li><a href="roommatrix.html">Room Matrix</a></li>
                 <li><a href="index.html">Logout</a></li>
             </ul>
-        </aside>
-        <main class="content">
-            <h1>AlzLumaCare</h1>
-        </main>
+        </nav>
+    </header>
+</body>
+</html>
+
+
+Index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlzLumaCare - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>AlzLumaCare</h1>
+        <form action="dashboard.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
     </div>
 </body>
 </html>
