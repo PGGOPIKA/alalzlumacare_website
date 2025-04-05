@@ -3,7 +3,7 @@ function login(event) {
     event.preventDefault();
     window.location.href = "dashboard.html";
 }
-
+ 
 // Profile Update Function
 document.addEventListener("DOMContentLoaded", function () {
     const profileForm = document.getElementById("profile-form");
