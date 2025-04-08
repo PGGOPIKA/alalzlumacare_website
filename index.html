@@ -1,84 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ALZLUMACARE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body, html { height: 100%; }
-    body { display: flex; justify-content: center; align-items: center; background: url('https://source.unsplash.com/1600x900/?medical,health') no-repeat center center/cover; }
-
-    .login-box, .main-app { background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 15px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); width: 90%; max-width: 400px; }
-    .login-box h2, .main-app h1 { text-align: center; margin-bottom: 1rem; }
-    input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc; }
-    button { width: 100%; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 8px; cursor: pointer; }
-    button:hover { background-color: #0056b3; }
-
-    .sidebar { position: fixed; left: 0; top: 0; width: 220px; height: 100%; background-color: #333; padding-top: 20px; color: white; display: none; flex-direction: column; }
-    .sidebar a { padding: 15px 20px; text-decoration: none; color: white; display: block; transition: background 0.3s; }
-    .sidebar a:hover { background-color: #575757; }
-    .main-content { margin-left: 240px; padding: 2rem; }
-    .hidden { display: none; }
-  </style>
+  <meta http-equiv="refresh" content="0;url=Login.html" />
+  <title>Redirecting...</title>
 </head>
 <body>
-  <div class="login-box" id="loginBox">
-    <h2>LOGIN</h2>
-    <input type="text" id="username" placeholder="User Name">
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="login()">Login</button>
-  </div>
-
-  <div class="sidebar" id="sidebar">
-    <a href="#" onclick="showSection('profile')">Profile</a>
-    <a href="#" onclick="showSection('menu')">Menu</a>
-    <a href="#" onclick="showSection('settings')">Settings</a>
-    <a href="#" onclick="logout()">Logout</a>
-  </div>
-
-  <div class="main-app hidden" id="mainApp">
-    <h1>ALZLUMACARE</h1>
-    <div class="main-content" id="mainContent">
-      <p>Welcome to the ALZLUMACARE web app.</p>
-    </div>
-  </div>
-
-  <script>
-    function login() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-      if (user === "admin" && pass === "admin") {
-        document.getElementById("loginBox").style.display = "none";
-        document.getElementById("sidebar").style.display = "flex";
-        document.getElementById("mainApp").classList.remove("hidden");
-      } else {
-        alert("Incorrect credentials");
-      }
-    }
-
-    function logout() {
-      location.reload();
-    }
-
-    function showSection(section) {
-      const content = document.getElementById("mainContent");
-      if (section === "profile") {
-        content.innerHTML = '<h2>Profile</h2><p>Patient profile data...</p>';
-      } else if (section === "menu") {
-        content.innerHTML = `
-          <h2>Menu</h2>
-          <ul>
-            <li>Medicare</li>
-            <li>LifeTrack</li>
-            <li>B Insight</li>
-            <li>Room Matrix</li>
-          </ul>`;
-      } else if (section === "settings") {
-        content.innerHTML = '<h2>Settings</h2><p>App preferences and setup...</p>';
-      }
-    }
-  </script>
+  <p>If you are not redirected, <a href="Login.html">click here</a>.</p>
 </body>
 </html>
